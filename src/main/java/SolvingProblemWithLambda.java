@@ -11,11 +11,9 @@ public class SolvingProblemWithLambda {
     }
 
     private static void printEvenNumbers(List<Integer> numbers) {
-        numbers.stream().filter(SolvingProblemWithLambda::isEven)
+        numbers.stream().filter(number -> number%2==0)
                 .forEach(System.out::println);
     }
 
-    private static boolean isEven(int number){
-        return number%2==0;
-    }
+
 }
